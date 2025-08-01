@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | LifeCare Plus</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="logo">LifeCare Plus</div>
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="patients.html"><i class="fas fa-user-injured"></i> Patients</a></li>
+            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+            <li><a href="appointment.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+            <li><a href="billing.html"><i class="fas fa-file-invoice"></i> Billing</a></li>
+            <li><a href="#"><i class="fas fa-chart-line"></i> Reports</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+        <header>
+            <h1>🏥 Hospital Dashboard</h1>
+            <p>Welcome, Admin! Here is an overview of your hospital's operations.</p>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h2>👨‍⚕️ 50+</h2>
+                <p>Registered Doctors</p>
+            </div>
+            <div class="card">
+                <h2>🩺 500+</h2>
+                <p>Patients Treated</p>
+            </div>
+            <div class="card">
+                <h2>📅 120</h2>
+                <p>Upcoming Appointments</p>
+            </div>
+            <div class="card">
+                <h2>💵 $1.2M</h2>
+                <p>Total Revenue</p>
+            </div>
+        </section>
+
+        <section class="recent">
+            <h2>📋 Recent Appointments</h2>
+            <table>
+                <tr>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Dr. Smith</td>
+                    <td>March 10, 2025</td>
+                    <td>✔ Confirmed</td>
+                </tr>
+                <tr>
+                    <td>Alice Brown</td>
+                    <td>Dr. Johnson</td>
+                    <td>March 12, 2025</td>
+                    <td>⏳ Pending</td>
+                </tr>
+                <tr>
+                    <td>Michael Lee</td>
+                    <td>Dr. Williams</td>
+                    <td>March 15, 2025</td>
+                    <td>❌ Canceled</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

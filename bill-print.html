@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Bill</title>
+    <link rel="stylesheet" href="css/bill-print.css">
+    <script defer src="js/bill-print.js"></script>
+</head>
+<body>
+
+    <div class="bill-container">
+        <h1>Hospital Invoice</h1>
+        <p><strong>Patient Name:</strong> <span id="billPatient"></span></p>
+        <p><strong>Doctor Name:</strong> <span id="billDoctor"></span></p>
+        <p><strong>Billing Date:</strong> <span id="billDate"></span></p>
+        <p><strong>Total Amount ($):</strong> <span id="billAmount"></span></p>
+        <p><strong>Payment Method:</strong> <span id="billPayment"></span></p>
+
+        <button onclick="window.print()">Print Bill</button>
+        <a href="index.html">
+            <button>Go To Back</button>
+        </a>
+        
+    </div>
+
+</body>
+</html>

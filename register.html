@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration | LifeCare Plus</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+     <link rel="stylesheet" href="css/register.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   
+    
+    <div class="register-container">
+        <h2>🔹 Patient Registration</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-calendar"></i>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-venus-mars"></i>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

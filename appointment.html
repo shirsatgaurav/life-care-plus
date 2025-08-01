@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+</head>
+<body>
+
+    <h2>Add New Patient</h2>
+
+    <form action="save_patient.php" method="POST">
+        <label>Patient Name:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label>Age:</label>
+        <input type="number" name="age" required>
+        <br>
+        <label>Contact:</label>
+        <input type="text" name="contact" required>
+        <br>
+        <label>Address:</label>
+        <textarea name="address" required></textarea>
+        <br>
+        <button type="submit">Save Patient</button>
+    </form>
+
+</body>
+</html>

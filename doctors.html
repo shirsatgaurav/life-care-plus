@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors | LifeCare Plus</title>
+    <link rel="stylesheet" href="css/doctors.css">
+    <script defer src="js/doctor.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">LifeCare Plus</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="patient.html">Patients</a></li>
+            <li><a href="doctors.html" class="active">Doctors</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>🩺 Doctor Management</h1>
+        <input type="text" id="searchBar" placeholder="🔍 Search Doctors">
+        <button id="addDoctorBtn">➕ Add Doctor</button>
+
+        <!-- Doctor List -->
+        <table id="doctorTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Specialty</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="doctorData">
+                <!-- Dynamic Doctor Data -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Doctor Modal -->
+    <div id="doctorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add/Edit Doctor</h2>
+            <input type="hidden" id="editIndex">
+            <label>Name:</label>
+            <input type="text" id="doctorName" required>
+            <label>Specialty:</label>
+            <input type="text" id="doctorSpecialty" required>
+            <label>Contact:</label>
+            <input type="text" id="doctorContact" required>
+            <button id="saveDoctor">Save</button>
+        </div>
+    </div>
+
+</body>
+</html>

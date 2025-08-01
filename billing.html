@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - LifeCare Plus</title>
+    <link rel="stylesheet" href="css/billing.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">    
+        <div class="logo">LifeCare Plus</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="patients.html">Patients</a></li>
+            <li><a href="appointpage.html">Appointments</a></li>
+            <li><a href="billing.html">Billing</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Billing Section -->
+    <div class="container">
+        <h1>Patient Billing</h1>
+
+        <div class="billing-form">
+            <label>Patient Name:</label>
+            <input type="text" id="patientName" placeholder="Enter Patient Name">
+
+            <label>Doctor Name:</label>
+            <input type="text" id="doctorName" placeholder="Enter Doctor Name">
+
+            <label>Billing Date:</label>
+            <input type="date" id="billingDate">
+
+            <label>Total Amount ($):</label>
+            <input type="number" id="totalAmount" placeholder="Enter Amount">
+
+            <label>Payment Method:</label>
+            <select id="paymentMethod">
+                <option value="Cash">Cash</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Insurance">Insurance</option>
+            </select>
+
+            <button id="generateBill">Generate Bill</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Doctor</th>
+                    <th>Billing Date</th>
+                    <th>Amount ($)</th>
+                    <th>Payment Method</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="billingData"></tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript Include -->
+    <script defer src="js/billing.js"></script>
+
+</body>
+</html>

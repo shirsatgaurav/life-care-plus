@@ -1,0 +1,146 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients | LifeCare Plus</title>
+    <link rel="stylesheet" href="css/patients.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">LifeCare Plus</div>
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="patients.html" class="active"><i class="fas fa-user-injured"></i> Patients</a></li>
+            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+            <li><a href="appointment.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+            <li><a href="billing.html"><i class="fas fa-file-invoice"></i> Billing</a></li>
+            <li><a href="reports.html"><i class="fas fa-chart-line"></i> Reports</a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>🩺 Patient Management</h1>
+            <input type="text" id="searchBar" placeholder="🔍 Search Patients">
+            <button id="addPatientBtn">➕ Add Patient</button>
+        </header>
+        
+        <section class="patient-list">
+            <h2>📋 Patient Records</h2>
+            <table id="patientTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody id="patientData">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+<div id="patientModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add/Edit Patient</h2>
+
+        <form action="" method="POST">
+            <input type="text" name="patientName" placeholder="Full Name" required>
+            <input type="number" name="patientAge" placeholder="Age" required>
+            <select name="patientGender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input type="text" name="patientContact" placeholder="Contact Number" required>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</div>
+    <script src="js/patient.js"></script>
+</body>
+</html> -->
+
+
+<!-- //***********************************************// -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients | LifeCare Plus</title>
+    <link rel="stylesheet" href="css/patients.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="logo">LifeCare Plus</div>
+        <ul>
+            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="patients.html" class="active"><i class="fas fa-user-injured"></i> Patients</a></li>
+            <li><a href="doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+            <li><a href="appointment.html"><i class="fas fa-calendar-check"></i> Appointments</a></li>
+            <li><a href="billing.html"><i class="fas fa-file-invoice"></i> Billing</a></li>
+            <li><a href="reports.html"><i class="fas fa-chart-line"></i> Reports</a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+        <header>
+            <h1>🩺 Patient Management</h1>
+            <p>Manage all your patients and their details efficiently.</p>
+        </header>
+
+        <!-- Patient Records Section -->
+        <section class="cards">
+            <div class="card">
+                <h2>👥 Total Patients</h2>
+                <p>120</p>
+            </div>
+            <div class="card">
+                <h2>📝 New Admissions</h2>
+                <p>15</p>
+            </div>
+            <div class="card">
+                <h2>📅 Appointments Today</h2>
+                <p>30</p>
+            </div>
+            <div class="card">
+                <h2>💡 Active Cases</h2>
+                <p>25</p>
+            </div>
+        </section>
+
+        <!-- Patient List Table -->
+        <section class="patient-list">
+            <h2>📋 Patient Records</h2>
+            <table id="patientTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody id="patientData">
+                    <!-- Dynamic Patient Data will be loaded here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/patient.js"></script>
+</body>
+</html>
